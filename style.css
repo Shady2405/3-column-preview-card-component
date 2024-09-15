@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Lexend Deca", sans-serif;
+}
+body{
+    background-color: white;
+}
+.bigcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    height: 495px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+}
+.card{
+    width: 310px;
+    padding: 3rem;
+    margin: auto;
+}
+.orange{
+    background-color:hsl(31, 77%, 52%) ;
+    border-radius: 10px 0 0 10px ;
+}
+.light{
+    background-color: hsl(184, 100%, 22%);
+}
+.green{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.container h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+}
+p{
+    font-size: 16px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.btn{
+    width: 145px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+}
+.o:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.l:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.g:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+.o{
+    color: hsl(31, 77%, 52%);
+}
+.l{
+    color: hsl(184, 100%, 22%);
+}
+.g{
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:950px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+    .bigcontainer{
+        padding: 30px;
+        align-items: center;
+    }
+    .orange{
+        border-radius: 10px 10px 0 0;
+    }
+    .green{
+        border-radius: 0 0 10px 10px;
+    }
+}
